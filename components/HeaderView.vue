@@ -42,13 +42,15 @@ const navigationTree = [
                 <hr class="dropdown-divider">
               </li>
               <li v-for="item in items.children">
-                <NuxtLink class="dropdown-item" :to="items.path+`/`+item._id">
+                <NuxtLink class="dropdown-item" :to="items.path + `/` + item._id">
                   {{ item.title }}
                 </NuxtLink>
               </li>
             </ul>
           </li>
         </ul>
+        <button class="snipcart-checkout btn btn-outline-light">Total: <span class="snipcart-total-price"></span> 🛒(<span
+            class="snipcart-items-count">0</span>)</button>
       </div>
     </div>
   </nav>
