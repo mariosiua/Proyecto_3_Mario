@@ -5,5 +5,6 @@
       <NuxtPage />
     </div>
   </main>
+  <Hello />
   <FooterView />
 </template>
