@@ -71,13 +71,12 @@
   <div class="row my-4">
     <button class="
               snipcart-add-item
-              btn btn-warning"
-					:data-item-id="doc.id"
-					:data-item-price="doc.price"
-					:data-item-description="doc.content"
-					:data-item-image="`https://cms-una.000webhostapp.com/storage/uploads${doc.image.path}`"
-					:data-item-name="doc.title"
-					>Buy Me!</button>
+              btn btn-warning" :data-item-id="doc.id" :data-item-price="doc.price" :data-item-description="doc.content"
+      :data-item-image="`https://cms-una.000webhostapp.com/storage/uploads${doc.image.path}`"
+      :data-item-name="doc.title">Comprar!</button>
+  </div>
+  <div class="row my-4">
+    <Comments />
   </div>
 </template>
 <script setup>
